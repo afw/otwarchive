@@ -15,7 +15,7 @@
       <dt class="required"><%= collection_form.label :name, ts("Collection Name*") %>:<%= link_to_help "collection-name" %></dt>
       <dd>
         <%= collection_form.text_field :name %>
-  	    <p class="footnote">(ASCII letters, numbers, underscores)</p>
+  	    <p class="footnote">(letters, numbers, underscores)</p>
     	</dd>
 
 
@@ -72,7 +72,7 @@
         <dt><%= preference_form.check_box :moderated %></dt>
         <dd><%= preference_form.label :moderated, ts("This collection is moderated") %> <%= link_to_help "moderated-collection" %></dd>
         <dt><%= preference_form.check_box :closed %></dt>
-        <dd><%= preference_form.label :closed, ts("This collection is closed") %></dd>
+        <dd><%= preference_form.label :closed, ts("This collection is closed") %><%= link_to_help "closed-collection" %></dd>
         <dt><%= preference_form.check_box :unrevealed %></dt>
         <dd>
           <%= preference_form.label :unrevealed, ts("This collection is unrevealed") %>
